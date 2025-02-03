@@ -21,24 +21,7 @@ JavaScript (Linguagem principal dos testes)
 
 Azure DevOps 🚀 (Integração e Deploy Contínuo - CI/CD)
 
-Page Object Model (POM) (Organização estruturada dos testes)
-
-📂 Estrutura do Projeto
-📁 cypress
- ├── 📁 fixtures        # Dados de teste
- ├── 📁 integration     # Testes automatizados
- │    ├── Teste-login.cy.js      # Testes de login
- │    ├── Teste-Navegacao.cy.js  # Testes de navegação
- ├── 📁 pages          # Page Objects
- │    ├── BasePage.js  # Classe base para páginas
- │    ├── carrinho.js  # Página do carrinho
- │    ├── elements.js  # Mapeamento de elementos
- │    ├── inventario.js # Página de inventário
- │    ├── login.js     # Página de login
- │    ├── saída.js     # Página de checkout/saída
- ├── 📁 plugins         # Plugins do Cypress
- ├── 📁 support         # Comandos customizados e configurações globais
- ├── cypress.json       # Configurações do Cypress
+📁 Page Object Model (POM) (Organização estruturada dos testes)
 
 🚀 Como Executar os Testes
 
