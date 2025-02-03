@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-22T20:39:57.912Z",
+    "end": "2025-01-22T20:40:02.760Z",
+    "duration": 4848,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b106817a-0c76-4cc8-bb43-972cdb446aee",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Integration\\Teste-Navegacao.cy.js",
+      "file": "cypress\\e2e\\Integration\\Teste-Navegacao.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "767ac7a7-4996-4edf-8631-99915d98ada6",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar que o usuario foi redirecionamento para página de inventário",
+              "fullTitle": "template spec Validar que o usuario foi redirecionamento para página de inventário",
+              "timedOut": null,
+              "duration": 2815,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_Login.default.preencherLoginSucesso();\n_Login.default.botaoConfirmar();\n_Login.default.mensagemConfirmacao();\n_Inventario.default.confirmacaoPagina();",
+              "err": {},
+              "uuid": "b7bd0daa-2685-4486-a738-913268b1167c",
+              "parentUUID": "767ac7a7-4996-4edf-8631-99915d98ada6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b7bd0daa-2685-4486-a738-913268b1167c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2815,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 4,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-01-28T20:33:58.662Z",
+    "end": "2025-01-28T20:34:08.363Z",
+    "duration": 9701,
+    "testsRegistered": 5,
+    "passPercent": 80,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "14938cb8-4513-45a7-81fc-b38f109c2fd9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Integration\\Teste-Navegacao.cy.js",
+      "file": "cypress\\e2e\\Integration\\Teste-Navegacao.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "15d0336e-20db-43f5-b048-a396acbf38b1",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar que o usuario foi redirecionamento para página de inventário",
+              "fullTitle": "template spec Validar que o usuario foi redirecionamento para página de inventário",
+              "timedOut": null,
+              "duration": 2261,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.mensagemConfirmacaoInventario();\n_inventario.default.adicionarMochilaCarrinho();",
+              "err": {},
+              "uuid": "ab3b8030-8222-4048-8ed5-7e2381b2ab5d",
+              "parentUUID": "15d0336e-20db-43f5-b048-a396acbf38b1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar detalhes do produto Mochila",
+              "fullTitle": "template spec Validar detalhes do produto Mochila",
+              "timedOut": null,
+              "duration": 1270,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.mensagemConfirmacaoInventario();\n_inventario.default.descricaoProdutoMochila();\n_inventario.default.textoDescricaoMochila();",
+              "err": {},
+              "uuid": "78d0c14d-e1c1-4d4d-b03d-9af8da17668e",
+              "parentUUID": "15d0336e-20db-43f5-b048-a396acbf38b1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar que o produto Mochila está adiconado ao carrinho",
+              "fullTitle": "template spec Validar que o produto Mochila está adiconado ao carrinho",
+              "timedOut": null,
+              "duration": 1152,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.mensagemConfirmacaoInventario();\n_inventario.default.adicionarMochilaCarrinho();\n_carrinho.default.botaoCarrinho();\n_carrinho.default.tituloConfirmacaoCarrinho();",
+              "err": {},
+              "uuid": "27d8f798-d123-455f-912a-8e43c71c1066",
+              "parentUUID": "15d0336e-20db-43f5-b048-a396acbf38b1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar remoção do produto Jaqueta do carrinho",
+              "fullTitle": "template spec Validar remoção do produto Jaqueta do carrinho",
+              "timedOut": null,
+              "duration": 1228,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.mensagemConfirmacaoInventario();\n_inventario.default.adicionarJaquetaCarrinho();\n_carrinho.default.botaoCarrinho();\n_carrinho.default.tituloConfirmacaoCarrinho();\n_carrinho.default.botaoRemoverJaqueta();",
+              "err": {},
+              "uuid": "83a8d5d9-98e3-4999-9ee2-2dd4048e9cf2",
+              "parentUUID": "15d0336e-20db-43f5-b048-a396acbf38b1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar itens listados no carrinho de compras",
+              "fullTitle": "template spec Validar itens listados no carrinho de compras",
+              "timedOut": null,
+              "duration": 1525,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.mensagemConfirmacaoInventario();\n_inventario.default.adicionarbabyBodyCarrinho();\n_inventario.default.adicionarLanternaCarrinho();\n_inventario.default.adicionarCasacoCarrinho();\n_carrinho.default.botaoCarrinho();\n_carrinho.default.tituloConfirmacaoCarrinho();\n_carrinho.default.textoDescricaoBabyBody();\n_carrinho.default.textoDescricaoMochila();\n_carrinho.default.textoJaqueta();",
+              "err": {
+                "message": "Error: Syntax error, unrecognized expression: add-to-cart-test.allthethings()-t-shirt-(red)",
+                "estack": "Error: Syntax error, unrecognized expression: add-to-cart-test.allthethings()-t-shirt-(red)\n    at find.error (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:8298:8)\n    at tokenize (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:8964:8)\n    at select (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9423:20)\n    at Function.find (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:7734:9)\n    at jQuery.fn.init.find (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9633:11)\n    at new jQuery.fn.init (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:9748:40)\n    at Object.query (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:17940:10)\n    at $Cy.$$ (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:139155:57)\n    at <unknown> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:131087:18)\n    at Object.subjectFn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:142971:16)\n    at $Cy.verifyUpcomingAssertions (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:142310:31)\n    at onRetry (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:142962:15)\n    at retryQuery (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:142975:10)\n    at <unknown> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:143128:17)\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromiseCtx (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1583:10)\n    at _drainQueueStep (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2381:12)\n    at _drainQueue (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2256:14)",
+                "diff": null
+              },
+              "uuid": "b6415d1b-01a3-4fba-a03f-eb7b1c29b8ca",
+              "parentUUID": "15d0336e-20db-43f5-b048-a396acbf38b1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ab3b8030-8222-4048-8ed5-7e2381b2ab5d",
+            "78d0c14d-e1c1-4d4d-b03d-9af8da17668e",
+            "27d8f798-d123-455f-912a-8e43c71c1066",
+            "83a8d5d9-98e3-4999-9ee2-2dd4048e9cf2"
+          ],
+          "failures": [
+            "b6415d1b-01a3-4fba-a03f-eb7b1c29b8ca"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7436,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

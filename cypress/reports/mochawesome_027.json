@@ -1,0 +1,186 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 4,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-01-28T20:39:33.213Z",
+    "end": "2025-01-28T20:39:43.355Z",
+    "duration": 10142,
+    "testsRegistered": 5,
+    "passPercent": 80,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f26ab5e7-ae2a-4080-a0ed-3db189430a60",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Integration\\Teste-Navegacao.cy.js",
+      "file": "cypress\\e2e\\Integration\\Teste-Navegacao.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0d80727a-dad5-411f-ace9-5241d082c0bc",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar que o usuario foi redirecionamento para página de inventário",
+              "fullTitle": "template spec Validar que o usuario foi redirecionamento para página de inventário",
+              "timedOut": null,
+              "duration": 2605,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.mensagemConfirmacaoInventario();\n_inventario.default.adicionarMochilaCarrinho();",
+              "err": {},
+              "uuid": "79437771-1048-4448-ac17-026c7f267f05",
+              "parentUUID": "0d80727a-dad5-411f-ace9-5241d082c0bc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar detalhes do produto Mochila",
+              "fullTitle": "template spec Validar detalhes do produto Mochila",
+              "timedOut": null,
+              "duration": 1504,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.mensagemConfirmacaoInventario();\n_inventario.default.descricaoProdutoMochila();\n_inventario.default.textoDescricaoMochila();",
+              "err": {},
+              "uuid": "49d61167-9901-42cd-b943-3fcc95ddbecf",
+              "parentUUID": "0d80727a-dad5-411f-ace9-5241d082c0bc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar que o produto Mochila está adiconado ao carrinho",
+              "fullTitle": "template spec Validar que o produto Mochila está adiconado ao carrinho",
+              "timedOut": null,
+              "duration": 1373,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.mensagemConfirmacaoInventario();\n_inventario.default.adicionarMochilaCarrinho();\n_carrinho.default.botaoCarrinho();\n_carrinho.default.tituloConfirmacaoCarrinho();",
+              "err": {},
+              "uuid": "9e83618a-2257-4014-b9b1-3f502fbce2bd",
+              "parentUUID": "0d80727a-dad5-411f-ace9-5241d082c0bc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar remoção do produto Jaqueta do carrinho",
+              "fullTitle": "template spec Validar remoção do produto Jaqueta do carrinho",
+              "timedOut": null,
+              "duration": 1461,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.mensagemConfirmacaoInventario();\n_inventario.default.adicionarJaquetaCarrinho();\n_carrinho.default.botaoCarrinho();\n_carrinho.default.tituloConfirmacaoCarrinho();\n_carrinho.default.botaoRemoverJaqueta();",
+              "err": {},
+              "uuid": "f95319b4-6108-4f19-a0f2-57f3e1bef580",
+              "parentUUID": "0d80727a-dad5-411f-ace9-5241d082c0bc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar itens listados no carrinho de compras",
+              "fullTitle": "template spec Validar itens listados no carrinho de compras",
+              "timedOut": null,
+              "duration": 762,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.mensagemConfirmacaoInventario();\n_inventario.default.adicionarbabyBodyCarrinho();\n_inventario.default.adicionarLanternaCarrinho();\n_inventario.default.adicionarCasacoCarrinho();\n_carrinho.default.botaoCarrinho();\n_carrinho.default.tituloConfirmacaoCarrinho();\n_carrinho.default.textoDescricaoBabyBody();\n_carrinho.default.textoDescricaoMochila();\n_carrinho.default.textoCasaco();",
+              "err": {
+                "message": "TypeError: _carrinho.default.textoCasaco is not a function",
+                "estack": "TypeError: _carrinho.default.textoCasaco is not a function\n    at Context.eval (webpack://swaglabs_e2e_cypress/./cypress/e2e/Integration/Teste-Navegacao.cy.js:63:13)\n    at runnable.fn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:137464:19)\n    at callFn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:156061:21)\n    at Runnable.run (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:156048:7)\n    at <unknown> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:161972:30)\n    at PassThroughHandlerContext.finallyHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:4042:23)\n    at PassThroughHandlerContext.tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1546:18)",
+                "diff": null
+              },
+              "uuid": "7bfeb69e-5ce0-4be6-8c76-f50130e7cccf",
+              "parentUUID": "0d80727a-dad5-411f-ace9-5241d082c0bc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "79437771-1048-4448-ac17-026c7f267f05",
+            "49d61167-9901-42cd-b943-3fcc95ddbecf",
+            "9e83618a-2257-4014-b9b1-3f502fbce2bd",
+            "f95319b4-6108-4f19-a0f2-57f3e1bef580"
+          ],
+          "failures": [
+            "7bfeb69e-5ce0-4be6-8c76-f50130e7cccf"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7705,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

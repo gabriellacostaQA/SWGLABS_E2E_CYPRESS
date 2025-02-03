@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-24T19:24:05.555Z",
+    "end": "2025-01-24T19:24:14.166Z",
+    "duration": 8611,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fd629e77-0219-4648-a7c1-8a962be8d8bd",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Integration\\Teste-Login.cy.js",
+      "file": "cypress\\e2e\\Integration\\Teste-Login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f9564121-3a10-4817-adf7-b9375d1e061d",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar login com credenciais válidas",
+              "fullTitle": "template spec Validar login com credenciais válidas",
+              "timedOut": null,
+              "duration": 3991,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_login.default.mensagemConfirmacao();",
+              "err": {},
+              "uuid": "8d43e558-718c-472d-b814-093fe3abf87a",
+              "parentUUID": "f9564121-3a10-4817-adf7-b9375d1e061d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar login com usuário bloqueado",
+              "fullTitle": "template spec Validar login com usuário bloqueado",
+              "timedOut": null,
+              "duration": 1668,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginBloqueado();\n_login.default.botaoConfirmar();\n_login.default.mensagemUsuarioBloqueado();",
+              "err": {},
+              "uuid": "98a0e5b9-dde1-4013-9523-0b05668a743d",
+              "parentUUID": "f9564121-3a10-4817-adf7-b9375d1e061d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar login com credenciais inválidas",
+              "fullTitle": "template spec Validar login com credenciais inválidas",
+              "timedOut": null,
+              "duration": 842,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginInvalido();\n_login.default.botaoConfirmar();\n_login.default.mensagemUsuarioInvalido();",
+              "err": {},
+              "uuid": "2483cddd-b6b5-4bb8-9acd-4566051a1ddf",
+              "parentUUID": "f9564121-3a10-4817-adf7-b9375d1e061d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8d43e558-718c-472d-b814-093fe3abf87a",
+            "98a0e5b9-dde1-4013-9523-0b05668a743d",
+            "2483cddd-b6b5-4bb8-9acd-4566051a1ddf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6501,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

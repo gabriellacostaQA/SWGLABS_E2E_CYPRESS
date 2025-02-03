@@ -1,0 +1,243 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 8,
+    "passes": 7,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-01-29T18:16:46.053Z",
+    "end": "2025-01-29T18:17:04.796Z",
+    "duration": 18743,
+    "testsRegistered": 8,
+    "passPercent": 87.5,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "eea2c6cb-4b12-4a7c-a9dd-3b69369252cb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Integration\\Teste-Navegacao.cy.js",
+      "file": "cypress\\e2e\\Integration\\Teste-Navegacao.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "72efbea8-914c-4de5-92dc-fd0a19e82ef0",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar que o usuario foi redirecionamento para página de inventário",
+              "fullTitle": "template spec Validar que o usuario foi redirecionamento para página de inventário",
+              "timedOut": null,
+              "duration": 2226,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.mensagemConfirmacaoInventario();\n_inventario.default.adicionarMochilaCarrinho();",
+              "err": {},
+              "uuid": "e615ae3d-de5d-4d41-9ff5-1248572ef79f",
+              "parentUUID": "72efbea8-914c-4de5-92dc-fd0a19e82ef0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar detalhes do produto Mochila",
+              "fullTitle": "template spec Validar detalhes do produto Mochila",
+              "timedOut": null,
+              "duration": 1268,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.mensagemConfirmacaoInventario();\n_inventario.default.descricaoProdutoMochila();\n_inventario.default.textoDescricaoMochila();",
+              "err": {},
+              "uuid": "df84530b-0f4b-4439-9955-0bf1114788c9",
+              "parentUUID": "72efbea8-914c-4de5-92dc-fd0a19e82ef0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar que o produto Mochila está adiconado ao carrinho",
+              "fullTitle": "template spec Validar que o produto Mochila está adiconado ao carrinho",
+              "timedOut": null,
+              "duration": 1134,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.mensagemConfirmacaoInventario();\n_inventario.default.adicionarMochilaCarrinho();\n_carrinho.default.botaoCarrinho();\n_carrinho.default.tituloConfirmacaoCarrinho();",
+              "err": {},
+              "uuid": "90f9abc9-f174-436e-bcf5-51926250c031",
+              "parentUUID": "72efbea8-914c-4de5-92dc-fd0a19e82ef0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar remoção do produto Jaqueta do carrinho",
+              "fullTitle": "template spec Validar remoção do produto Jaqueta do carrinho",
+              "timedOut": null,
+              "duration": 1205,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.mensagemConfirmacaoInventario();\n_inventario.default.adicionarJaquetaCarrinho();\n_carrinho.default.botaoCarrinho();\n_carrinho.default.tituloConfirmacaoCarrinho();\n_carrinho.default.botaoRemoverJaqueta();",
+              "err": {},
+              "uuid": "45edd660-e16a-4962-a246-335d74c8de2a",
+              "parentUUID": "72efbea8-914c-4de5-92dc-fd0a19e82ef0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar itens listados no carrinho de compras",
+              "fullTitle": "template spec Validar itens listados no carrinho de compras",
+              "timedOut": null,
+              "duration": 1213,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.mensagemConfirmacaoInventario();\n_inventario.default.adicionarbabyBodyCarrinho();\n_inventario.default.adicionarLanternaCarrinho();\n// inventario.adicionarCasacoCarrinho();\n_carrinho.default.botaoCarrinho();\n_carrinho.default.tituloConfirmacaoCarrinho();\n_carrinho.default.textoBabyBody();\n_carrinho.default.textoLanterna();\n// carrinho.textoCasaco();",
+              "err": {},
+              "uuid": "e671ef0f-96be-4eb4-b93e-d11e9f9a4506",
+              "parentUUID": "72efbea8-914c-4de5-92dc-fd0a19e82ef0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar processo inicial de checkout",
+              "fullTitle": "template spec Validar processo inicial de checkout",
+              "timedOut": null,
+              "duration": 1225,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.mensagemConfirmacaoInventario();\n_inventario.default.adicionarLanternaCarrinho();\n_carrinho.default.botaoCarrinho();\n_carrinho.default.tituloConfirmacaoCarrinho();\n_carrinho.default.textoLanterna();\n_carrinho.default.botaoCheckout();",
+              "err": {},
+              "uuid": "6113c99b-60b5-46bf-9146-72670600fc94",
+              "parentUUID": "72efbea8-914c-4de5-92dc-fd0a19e82ef0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar preenchimento dos campos do checkout",
+              "fullTitle": "template spec Validar preenchimento dos campos do checkout",
+              "timedOut": null,
+              "duration": 2020,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.adicionarLanternaCarrinho();\n_carrinho.default.botaoCarrinho();\n_carrinho.default.botaoCheckout();\n_saida.default.preencherCheckout();",
+              "err": {},
+              "uuid": "8ff676b1-dbd5-46e1-b1d4-21e09d44f139",
+              "parentUUID": "72efbea8-914c-4de5-92dc-fd0a19e82ef0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar a finalização do pedido com informações válidas",
+              "fullTitle": "template spec Validar a finalização do pedido com informações válidas",
+              "timedOut": null,
+              "duration": 6256,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.preencherLoginSucesso();\n_login.default.botaoConfirmar();\n_inventario.default.adicionarLanternaCarrinho();\n_carrinho.default.botaoCarrinho();\n_carrinho.default.botaoCheckout();\n_saida.default.preencherCheckout();\n_saida.default.mensagemPayment();\n_saida.default.mensagemShipping();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Payment Information:' but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Payment Information:' but never did.\n    at saida.mensagemPayment (webpack://swaglabs_e2e_cypress/./cypress/e2e/pages/saida.js:33:44)\n    at Context.eval (webpack://swaglabs_e2e_cypress/./cypress/e2e/Integration/Teste-Navegacao.cy.js:98:10)",
+                "diff": null
+              },
+              "uuid": "9b273094-5d12-40ce-958b-2f8751295192",
+              "parentUUID": "72efbea8-914c-4de5-92dc-fd0a19e82ef0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e615ae3d-de5d-4d41-9ff5-1248572ef79f",
+            "df84530b-0f4b-4439-9955-0bf1114788c9",
+            "90f9abc9-f174-436e-bcf5-51926250c031",
+            "45edd660-e16a-4962-a246-335d74c8de2a",
+            "e671ef0f-96be-4eb4-b93e-d11e9f9a4506",
+            "6113c99b-60b5-46bf-9146-72670600fc94",
+            "8ff676b1-dbd5-46e1-b1d4-21e09d44f139"
+          ],
+          "failures": [
+            "9b273094-5d12-40ce-958b-2f8751295192"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 16547,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

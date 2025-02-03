@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-01-22T18:43:57.598Z",
+    "end": "2025-01-22T18:43:57.992Z",
+    "duration": 394,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1688e710-90c5-4031-9b5a-bafb9b2fb361",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Integration\\Cenario1.cy.js",
+      "file": "cypress\\e2e\\Integration\\Cenario1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b98dc5b8-e701-444e-8513-c8cd6fb43311",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 368,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get('[data-test=\"username\"]').type('standard_user');\ncy.get('[data-test=\"password\"]').tyoe('secret_sauce');",
+              "err": {
+                "message": "TypeError: cy.get(...).tyoe is not a function",
+                "estack": "TypeError: cy.get(...).tyoe is not a function\n    at Context.eval (webpack://swaglabs_e2e_cypress/./cypress/e2e/Integration/Cenario1.cy.js:5:37)\n    at runnable.fn (http://localhost:54378/__cypress/runner/cypress_runner.js:137464:19)\n    at callFn (http://localhost:54378/__cypress/runner/cypress_runner.js:156061:21)\n    at Runnable.run (http://localhost:54378/__cypress/runner/cypress_runner.js:156048:7)\n    at <unknown> (http://localhost:54378/__cypress/runner/cypress_runner.js:161972:30)\n    at PassThroughHandlerContext.finallyHandler (http://localhost:54378/__cypress/runner/cypress_runner.js:4042:23)\n    at PassThroughHandlerContext.tryCatcher (http://localhost:54378/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://localhost:54378/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://localhost:54378/__cypress/runner/cypress_runner.js:1546:18)",
+                "diff": null
+              },
+              "uuid": "316835db-f11c-4338-99f0-c78ceb75a63f",
+              "parentUUID": "b98dc5b8-e701-444e-8513-c8cd6fb43311",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "316835db-f11c-4338-99f0-c78ceb75a63f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 368,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
